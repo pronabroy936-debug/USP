@@ -92,9 +92,29 @@
     const form = document.getElementById("contactForm");
     const status = document.getElementById("formStatus");
     if (!form || !status) return;
+
     form.addEventListener("submit", (event) => {
       event.preventDefault();
-      status.textContent = "Enquiry noted. Please also use WhatsApp or call for a quick response.";
+
+      const formData = new FormData(form);
+      const name = (formData.get("name") || "").toString().trim();
+      const phone = (formData.get("phone") || "").toString().trim();
+      const course = (formData.get("course") || "").toString().trim();
+      const message = (formData.get("message") || "").toString().trim();
+
+      const whatsappMessage = [
+        "Hello USP, I want to send an enquiry.",
+        "",
+        `Full Name: ${name || "-"}`,
+        `Phone Number: ${phone || "-"}`,
+        `Class / Course: ${course || "-"}`,
+        `Message: ${message || "-"}`
+      ].join("\n");
+
+      const whatsappUrl = `https://wa.me/916289013323?text=${encodeURIComponent(whatsappMessage)}`;
+
+      status.textContent = "Opening WhatsApp with your enquiry details...";
+      window.open(whatsappUrl, "_blank", "noopener");
       form.reset();
     });
   }
