@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact USP Coaching</title>
+  <meta name="description" content="Contact USP Coaching through call, WhatsApp, email, address details, and a simple frontend enquiry form.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact">
+  <div data-include="header"></div>
+  <main>
+    <section class="page-hero compact">
+      <div class="container narrow reveal">
+        <p class="section-label">Contact Us</p>
+        <h1>Reach USP directly for admission, demo classes, and batch details.</h1>
+        <p>All quick actions are available through direct call and WhatsApp for a simple contact experience.</p>
+      </div>
+    </section>
+    <section class="section-block">
+      <div class="container contact-layout">
+        <div class="contact-card-panel reveal">
+          <p class="section-label">Quick Contact</p>
+          <h2>Talk to USP</h2>
+          <div class="contact-item"><span>Phone</span><a href="tel:+916289013323">6289013323</a></div>
+          <div class="contact-item"><span>Email</span><a href="mailto:ipsita96.saha@gmail.com">ipsita96.saha@gmail.com</a></div>
+          <div class="contact-item"><span>Address</span><p>4 No. Kataganj, Bedibhawan<br>Kalyani - 741250</p></div>
+          <div class="stacked-actions">
+            <a class="btn btn-primary" href="https://wa.me/916289013323?text=Hello%20USP%2C%20please%20share%20admission%20details." target="_blank" rel="noreferrer">Chat on WhatsApp</a>
+            <a class="btn btn-secondary" href="tel:+916289013323">Call Now</a>
+          </div>
+        </div>
+        <div class="form-panel reveal">
+          <p class="section-label">Frontend Form</p>
+          <h2>Send an enquiry</h2>
+          <form id="contactForm" class="contact-form">
+            <label>Full Name<input type="text" name="name" placeholder="Enter full name" required></label>
+            <label>Phone Number<input type="tel" name="phone" placeholder="Enter phone number" required></label>
+            <label>Class / Course<input type="text" name="course" placeholder="Example: Class 8 Science"></label>
+            <label>Message<textarea name="message" rows="5" placeholder="Write your enquiry"></textarea></label>
+            <button class="btn btn-primary" type="submit">Submit Enquiry</button>
+            <p class="form-note">This is a frontend-only form. Submission shows a confirmation message only.</p>
+            <p id="formStatus" class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="section-block soft-bg">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-label">Location</p>
+          <h2>Find USP on the map</h2>
+        </div>
+        <div class="map-frame reveal">
+          <iframe title="USP Coaching location map" src="https://www.google.com/maps?q=Kalyani%20741250&z=14&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div data-include="footer"></div>
+  <script src="js/script.js"></script>
+</body>
+</html>
