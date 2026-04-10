@@ -1,0 +1,21 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="42" fill="#F3FCFF"/>
+  <rect x="60" y="60" width="1080" height="780" rx="34" fill="url(#g3)"/>
+  <rect x="152" y="118" width="896" height="664" rx="28" fill="#FFFFFF"/>
+  <path d="M248 238H950" stroke="#123C73" stroke-width="24" stroke-linecap="round"/>
+  <path d="M248 316H894" stroke="#36BEE8" stroke-width="18" stroke-linecap="round"/>
+  <path d="M248 384H844" stroke="#17A66F" stroke-width="18" stroke-linecap="round"/>
+  <path d="M248 452H910" stroke="#123C73" stroke-width="18" stroke-linecap="round"/>
+  <path d="M248 520H790" stroke="#F1A13C" stroke-width="18" stroke-linecap="round"/>
+  <path d="M248 588H870" stroke="#123C73" stroke-width="18" stroke-linecap="round"/>
+  <rect x="192" y="678" width="360" height="62" rx="18" fill="#17A66F"/>
+  <rect x="584" y="678" width="424" height="62" rx="18" fill="#FFC83D"/>
+  <text x="600" y="164" text-anchor="middle" fill="#123C73" font-size="60" font-family="Arial, sans-serif" font-weight="700">Study Materials Demo</text>
+  <text x="600" y="718" text-anchor="middle" fill="#123C73" font-size="30" font-family="Arial, sans-serif" font-weight="700">Replace with notes, books, or study desk image</text>
+  <defs>
+    <linearGradient id="g3" x1="92" y1="80" x2="1102" y2="812" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DDF6FF"/>
+      <stop offset="1" stop-color="#FFF7D5"/>
+    </linearGradient>
+  </defs>
+</svg>

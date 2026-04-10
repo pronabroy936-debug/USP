@@ -1,0 +1,17 @@
+<svg width="900" height="1200" viewBox="0 0 900 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="1200" rx="42" fill="#E7FAFF"/>
+  <rect x="56" y="56" width="788" height="1088" rx="34" fill="url(#g2)"/>
+  <circle cx="450" cy="360" r="168" fill="#FFD48A"/>
+  <path d="M274 832C274 700 356 612 450 612C544 612 626 700 626 832V922H274V832Z" fill="#123C73"/>
+  <circle cx="450" cy="336" r="108" fill="#F5B38B"/>
+  <path d="M346 320C346 252 392 214 452 214C522 214 560 264 560 328V360H346V320Z" fill="#18365F"/>
+  <rect x="210" y="972" width="480" height="84" rx="24" fill="#36BEE8"/>
+  <text x="450" y="118" text-anchor="middle" fill="#123C73" font-size="58" font-family="Arial, sans-serif" font-weight="700">Teacher Demo Portrait</text>
+  <text x="450" y="1024" text-anchor="middle" fill="#123C73" font-size="30" font-family="Arial, sans-serif" font-weight="700">Replace with teacher photo later</text>
+  <defs>
+    <linearGradient id="g2" x1="86" y1="80" x2="790" y2="1110" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#D9F5FF"/>
+    </linearGradient>
+  </defs>
+</svg>

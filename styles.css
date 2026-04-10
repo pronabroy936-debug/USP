@@ -318,10 +318,8 @@ a {
   justify-content: flex-start;
   padding: 1.3rem;
   border-radius: 28px;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(9, 42, 85, 0.35)),
-    linear-gradient(135deg, rgba(54, 190, 232, 0.45), rgba(255, 200, 61, 0.38));
-  border: 2px dashed rgba(18, 60, 115, 0.2);
+  background: rgba(255, 255, 255, 0.74);
+  border: 2px solid rgba(18, 60, 115, 0.08);
   overflow: hidden;
 }
 
@@ -335,7 +333,15 @@ a {
     linear-gradient(180deg, rgba(255, 255, 255, 0.18), transparent 60%);
 }
 
-.visual-photo span {
+.visual-photo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.visual-photo figcaption {
   position: relative;
   z-index: 1;
   padding: 0.65rem 1rem;
@@ -531,13 +537,22 @@ a {
   min-height: 220px;
   border-radius: 28px;
   padding: 1.25rem;
+  position: relative;
   display: flex;
   align-items: flex-end;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(9, 42, 85, 0.34)),
-    linear-gradient(135deg, rgba(54, 190, 232, 0.54), rgba(23, 166, 111, 0.34), rgba(255, 200, 61, 0.42));
-  border: 2px dashed rgba(18, 60, 115, 0.16);
+  margin: 0;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(18, 60, 115, 0.08);
   box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.gallery-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(9, 42, 85, 0.48));
+  z-index: 1;
 }
 
 .gallery-card.large {
@@ -545,7 +560,17 @@ a {
   grid-row: span 2;
 }
 
-.gallery-card span {
+.gallery-card img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-card figcaption {
+  position: relative;
+  z-index: 2;
   padding: 0.6rem 0.9rem;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.92);

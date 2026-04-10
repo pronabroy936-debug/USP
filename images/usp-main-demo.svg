@@ -1,0 +1,27 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="42" fill="#D8F5FF"/>
+  <rect x="56" y="56" width="1088" height="788" rx="34" fill="url(#bg)"/>
+  <circle cx="196" cy="178" r="92" fill="#8ADCF6" fill-opacity="0.65"/>
+  <circle cx="1002" cy="170" r="84" fill="#9BE7C5" fill-opacity="0.72"/>
+  <rect x="138" y="198" width="924" height="466" rx="28" fill="#F8FDFF"/>
+  <rect x="188" y="246" width="824" height="54" rx="18" fill="#123C73"/>
+  <rect x="188" y="326" width="398" height="256" rx="24" fill="#E2F7FF"/>
+  <rect x="614" y="326" width="344" height="256" rx="24" fill="#EAFBF3"/>
+  <circle cx="740" cy="438" r="78" fill="#7CD4A6"/>
+  <circle cx="740" cy="438" r="42" fill="#F7A253"/>
+  <path d="M250 546C314 454 390 386 486 354" stroke="#36BEE8" stroke-width="16" stroke-linecap="round"/>
+  <path d="M272 388H514" stroke="#123C73" stroke-width="22" stroke-linecap="round"/>
+  <path d="M272 436H466" stroke="#123C73" stroke-width="18" stroke-linecap="round"/>
+  <path d="M272 486H430" stroke="#123C73" stroke-width="18" stroke-linecap="round"/>
+  <rect x="146" y="720" width="348" height="70" rx="22" fill="#36BEE8"/>
+  <rect x="522" y="720" width="222" height="70" rx="22" fill="#17A66F"/>
+  <rect x="772" y="720" width="282" height="70" rx="22" fill="#FFC83D"/>
+  <text x="600" y="142" text-anchor="middle" fill="#123C73" font-size="72" font-family="Arial, sans-serif" font-weight="700">USP Main Demo</text>
+  <text x="600" y="760" text-anchor="middle" fill="#123C73" font-size="34" font-family="Arial, sans-serif" font-weight="700">Replace this file with your real classroom image later</text>
+  <defs>
+    <linearGradient id="bg" x1="104" y1="96" x2="1086" y2="810" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#BDEFFF"/>
+      <stop offset="1" stop-color="#FFF5C8"/>
+    </linearGradient>
+  </defs>
+</svg>
