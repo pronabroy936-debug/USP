@@ -112,9 +112,16 @@
       ].join("\n");
 
       const whatsappUrl = `https://wa.me/916289013323?text=${encodeURIComponent(whatsappMessage)}`;
+      const isMobile = /Android|iPhone|iPad|iPod|Windows Phone|Opera Mini|IEMobile/i.test(
+        navigator.userAgent
+      );
 
       status.textContent = "Opening WhatsApp with your enquiry details...";
-      window.open(whatsappUrl, "_blank", "noopener");
+      if (isMobile) {
+        window.location.href = whatsappUrl;
+      } else {
+        window.open(whatsappUrl, "_blank", "noopener");
+      }
       form.reset();
     });
   }
