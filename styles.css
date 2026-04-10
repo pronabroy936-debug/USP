@@ -91,10 +91,27 @@ a {
   line-height: 1.1;
 }
 
+.topbar-links {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.48);
+  border: 1px solid rgba(18, 60, 115, 0.08);
+  backdrop-filter: blur(12px);
+}
+
+.topbar-links a {
+  font-weight: 800;
+  color: var(--navy);
+}
+
 .topbar-actions,
 .hero-buttons,
 .cta-actions,
-.footer-actions {
+.footer-actions,
+.story-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.8rem;
@@ -252,6 +269,35 @@ a {
   font-weight: 700;
 }
 
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.8rem;
+}
+
+.stat-chip {
+  padding: 1rem 1.05rem;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(18, 60, 115, 0.08);
+  box-shadow: var(--shadow);
+}
+
+.stat-chip strong {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--navy);
+}
+
+.stat-chip span {
+  display: block;
+  margin-top: 0.3rem;
+  line-height: 1.5;
+  color: var(--muted);
+  font-weight: 700;
+}
+
 .hero-visual {
   position: relative;
   min-height: 620px;
@@ -262,6 +308,41 @@ a {
     linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(208, 246, 255, 0.8));
   border: 2px solid rgba(18, 60, 115, 0.08);
   box-shadow: var(--shadow);
+}
+
+.visual-photo {
+  position: absolute;
+  inset: 8.4rem 4.2rem 9.5rem 4.2rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 1.3rem;
+  border-radius: 28px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(9, 42, 85, 0.35)),
+    linear-gradient(135deg, rgba(54, 190, 232, 0.45), rgba(255, 200, 61, 0.38));
+  border: 2px dashed rgba(18, 60, 115, 0.2);
+  overflow: hidden;
+}
+
+.visual-photo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 22%, rgba(255, 255, 255, 0.9), transparent 15%),
+    radial-gradient(circle at 80% 20%, rgba(23, 166, 111, 0.16), transparent 25%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.18), transparent 60%);
+}
+
+.visual-photo span {
+  position: relative;
+  z-index: 1;
+  padding: 0.65rem 1rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.88);
+  color: var(--navy);
+  font-weight: 900;
 }
 
 .usp-badge {
@@ -413,6 +494,65 @@ a {
   margin-top: 1.8rem;
 }
 
+.image-story {
+  position: relative;
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 1.4rem;
+  margin-top: 2rem;
+}
+
+.story-copy {
+  padding: 2rem;
+}
+
+.story-copy h3 {
+  margin: 0 0 1rem;
+  font-size: 2rem;
+  line-height: 1.05;
+  color: var(--navy);
+}
+
+.story-copy p {
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 1rem;
+}
+
+.gallery-card {
+  min-height: 220px;
+  border-radius: 28px;
+  padding: 1.25rem;
+  display: flex;
+  align-items: flex-end;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(9, 42, 85, 0.34)),
+    linear-gradient(135deg, rgba(54, 190, 232, 0.54), rgba(23, 166, 111, 0.34), rgba(255, 200, 61, 0.42));
+  border: 2px dashed rgba(18, 60, 115, 0.16);
+  box-shadow: var(--shadow);
+}
+
+.gallery-card.large {
+  min-height: 460px;
+  grid-row: span 2;
+}
+
+.gallery-card span {
+  padding: 0.6rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+  font-weight: 900;
+  color: var(--navy);
+}
+
 .about-copy,
 .teacher {
   padding: 2rem;
@@ -456,11 +596,45 @@ a {
 }
 
 .course-grid,
-.outcome-grid {
+.outcome-grid,
+.process-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.4rem;
   margin-top: 2rem;
+}
+
+.process-card {
+  padding: 1.8rem;
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(218, 248, 255, 0.76));
+  border: 1px solid rgba(18, 60, 115, 0.08);
+  box-shadow: var(--shadow);
+}
+
+.process-card span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, var(--navy), #1a66b6);
+  color: var(--white);
+  font-weight: 900;
+}
+
+.process-card h3 {
+  margin: 1rem 0 0.7rem;
+  font-size: 1.45rem;
+  color: var(--navy);
+}
+
+.process-card p {
+  margin: 0;
+  line-height: 1.7;
+  color: var(--muted);
 }
 
 .course-card {
@@ -535,6 +709,43 @@ a {
   background: linear-gradient(135deg, var(--sun), var(--orange));
   color: var(--navy-deep);
   font-weight: 900;
+}
+
+.highlight-strip {
+  margin-top: 1rem;
+}
+
+.highlight-panel {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 1.4rem;
+  padding: 2rem;
+  border-radius: var(--radius-xl);
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.26), transparent 22%),
+    linear-gradient(135deg, rgba(18, 60, 115, 0.98), rgba(15, 79, 146, 0.96));
+  box-shadow: var(--shadow);
+}
+
+.highlight-copy h2 {
+  margin: 0;
+  font-family: "Baloo 2", cursive;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 0.98;
+  color: var(--white);
+}
+
+.highlight-copy p:last-child {
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.75;
+}
+
+.highlight-actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .cta-banner {
@@ -629,6 +840,8 @@ a {
   .hero-panel,
   .about-grid,
   .course-grid,
+  .story-grid,
+  .highlight-panel,
   .footer-grid,
   .cta-banner {
     grid-template-columns: 1fr;
@@ -643,12 +856,17 @@ a {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .outcome-grid {
+  .outcome-grid,
+  .process-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .hero-visual {
     min-height: 520px;
+  }
+
+  .topbar-links {
+    display: none;
   }
 }
 
@@ -668,6 +886,13 @@ a {
 
   .hero-copy h1 {
     font-size: clamp(2.5rem, 15vw, 4rem);
+  }
+
+  .hero-stats,
+  .gallery-grid,
+  .process-grid,
+  .highlight-panel {
+    grid-template-columns: 1fr;
   }
 
   .section {
@@ -694,6 +919,15 @@ a {
   .visual-card.biology {
     right: 1rem;
     bottom: 4rem;
+  }
+
+  .visual-photo {
+    inset: 7rem 1rem 10rem 1rem;
+  }
+
+  .gallery-card.large {
+    min-height: 280px;
+    grid-row: auto;
   }
 
   .pill-grid,
